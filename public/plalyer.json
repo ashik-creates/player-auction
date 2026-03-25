@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "playerName": "Virat Kohli",
+    "playerImg": "https://i.ibb.co/vY5zXfG/kohli.png",
+    "playerType": "Batsman",
+    "playerBat": "Right-hand bat",
+    "playerBowl": "Right-arm medium",
+    "playerRating": 9.5,
+    "playerCountry": "India",
+    "playerPrice": 1500000
+  },
+  {
+    "id": 2,
+    "playerName": "Ben Stokes",
+    "playerImg": "https://i.ibb.co/mS0Y8Yy/stokes.png",
+    "playerType": "All-rounder",
+    "playerBat": "Left-hand bat",
+    "playerBowl": "Right-arm fast-medium",
+    "playerRating": 8.9,
+    "playerCountry": "England",
+    "playerPrice": 1250000
+  },
+  {
+    "id": 3,
+    "playerName": "Rashid Khan",
+    "playerImg": "https://i.ibb.co/L8yP6Ym/rashid.png",
+    "playerType": "Bowler",
+    "playerBat": "Right-hand bat",
+    "playerBowl": "Right-arm legbreak",
+    "playerRating": 9.2,
+    "playerCountry": "Afghanistan",
+    "playerPrice": 1100000
+  },
+  {
+    "id": 4,
+    "playerName": "Babar Azam",
+    "playerImg": "https://i.ibb.co/Xz9Y5Yk/babar.png",
+    "playerType": "Batsman",
+    "playerBat": "Right-hand bat",
+    "playerBowl": "Right-arm offbreak",
+    "playerRating": 9.1,
+    "playerCountry": "Pakistan",
+    "playerPrice": 1400000
+  },
+  {
+    "id": 5,
+    "playerName": "Glenn Maxwell",
+    "playerImg": "https://i.ibb.co/PZ9Y5Yj/maxwell.png",
+    "playerType": "All-rounder",
+    "playerBat": "Right-hand bat",
+    "playerBowl": "Right-arm offbreak",
+    "playerRating": 8.7,
+    "playerCountry": "Australia",
+    "playerPrice": 950000
+  },
+  {
+    "id": 6,
+    "playerName": "Jasprit Bumrah",
+    "playerImg": "https://i.ibb.co/QY9Y5Yh/bumrah.png",
+    "playerType": "Bowler",
+    "playerBat": "Right-hand bat",
+    "playerBowl": "Right-arm fast",
+    "playerRating": 9.4,
+    "playerCountry": "India",
+    "playerPrice": 1300000
+  },
+  {
+    "id": 7,
+    "playerName": "Kane Williamson",
+    "playerImg": "https://i.ibb.co/RY9Y5Yg/kane.png",
+    "playerType": "Batsman",
+    "playerBat": "Right-hand bat",
+    "playerBowl": "Right-arm offbreak",
+    "playerRating": 8.8,
+    "playerCountry": "New Zealand",
+    "playerPrice": 1000000
+  },
+  {
+    "id": 8,
+    "playerName": "Shakib Al Hasan",
+    "playerImg": "https://i.ibb.co/SY9Y5Yf/shakib.png",
+    "playerType": "All-rounder",
+    "playerBat": "Left-hand bat",
+    "playerBowl": "Slow left-arm orthodox",
+    "playerRating": 8.9,
+    "playerCountry": "Bangladesh",
+    "playerPrice": 1050000
+  },
+  {
+    "id": 9,
+    "playerName": "Quinton de Kock",
+    "playerImg": "https://i.ibb.co/TY9Y5Ye/dekock.png",
+    "playerType": "Wicketkeeper",
+    "playerBat": "Left-hand bat",
+    "playerBowl": "N/A",
+    "playerRating": 8.6,
+    "playerCountry": "South Africa",
+    "playerPrice": 900000
+  },
+  {
+    "id": 10,
+    "playerName": "Trent Boult",
+    "playerImg": "https://i.ibb.co/UY9Y5Yd/boult.png",
+    "playerType": "Bowler",
+    "playerBat": "Right-hand bat",
+    "playerBowl": "Left-arm fast-medium",
+    "playerRating": 8.8,
+    "playerCountry": "New Zealand",
+    "playerPrice": 1150000
+  },
+  {
+    "id": 11,
+    "playerName": "David Warner",
+    "playerImg": "https://i.ibb.co/VY9Y5Yc/warner.png",
+    "playerType": "Batsman",
+    "playerBat": "Left-hand bat",
+    "playerBowl": "Right-arm legbreak",
+    "playerRating": 8.7,
+    "playerCountry": "Australia",
+    "playerPrice": 1100000
+  },
+  {
+    "id": 12,
+    "playerName": "Wanindu Hasaranga",
+    "playerImg": "https://i.ibb.co/WY9Y5Yb/wanindu.png",
+    "playerType": "All-rounder",
+    "playerBat": "Right-hand bat",
+    "playerBowl": "Right-arm legbreak",
+    "playerRating": 8.5,
+    "playerCountry": "Sri Lanka",
+    "playerPrice": 850000
+  }
+]
