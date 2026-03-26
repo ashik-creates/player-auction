@@ -1,6 +1,6 @@
 import React from "react";
-import SelectedCard from "../../ui/selectedCard";
 import EmptyText from "../../EmptyText/EmptyText";
+import SelectedCard from "../../ui/SelectedCard";
 
 const SelectedPlayers = ({
   selectedPlayers,
@@ -9,13 +9,9 @@ const SelectedPlayers = ({
   setBalance,
 }) => {
   const handleDelete = (selectPlayer) => {
-
     setBalance(balance + selectPlayer.playerPrice);
-    const newSelected = selectedPlayers.filter(
-      (p) => p.id !== selectPlayer.id,
-    );
+    const newSelected = selectedPlayers.filter((p) => p.id !== selectPlayer.id);
     setSelectedPlayers(newSelected);
-    
   };
   return (
     <div className="w-11/12 mx-auto my-12 space-y-4">
