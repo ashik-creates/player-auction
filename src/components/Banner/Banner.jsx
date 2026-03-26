@@ -7,7 +7,7 @@ const Banner = () => {
     <div className="w-11/12 mx-auto mt-9 rounded-xl bg-[#131313]">
       <div
         style={{ backgroundImage: `url(${bgImg})` }}
-        className="min-h-[60vh] bg-no-repeat bg-cover rounded-xl flex flex-col justify-center items-center"
+        className="min-h-[60vh] bg-no-repeat bg-cover rounded-xl flex flex-col justify-center items-center p-5"
       >
         <div className="flex flex-col justify-center items-center">
           <div className="w-48 h-48">

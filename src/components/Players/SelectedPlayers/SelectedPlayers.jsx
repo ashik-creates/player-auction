@@ -1,9 +1,11 @@
 import React from 'react';
+import SelectedCard from '../../ui/selectedCard';
 
-const SelectedPlayers = () => {
+
+const SelectedPlayers = ({selectedPlayers}) => {
     return (
-        <div>
-            <h1>selected</h1>
+        <div className='w-11/12 mx-auto my-12 space-y-4'>
+            {selectedPlayers.map(player=> <SelectedCard key={player.id} player={player}></SelectedCard> )}
         </div>
     );
 };

@@ -1,15 +1,21 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import AvailablePlayers from "./AvailablePlayers/AvailablePlayers";
 import SelectedPlayers from "./SelectedPlayers/SelectedPlayers";
 
-const Player = () => {
+const Player = ({ playerPromise, balance, setBalance }) => {
+  const playerData = use(playerPromise);
   const [btnToggle, setBtnToggle] = useState("available");
+  const [selectedPlayers, setSelectedPlayers] = useState([]);
 
   return (
     <>
       <div className="mt-12 w-11/12 mx-auto">
         <div className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Available Players</h1>
+          {btnToggle === "available" ? (
+            <h1 className="text-2xl font-bold">Available</h1>
+          ) : (
+            <h1 className="text-2xl font-bold">Selected Player ({selectedPlayers.length}/{playerData.length})</h1>
+          )}
           <div>
             <button
               onClick={() => setBtnToggle("available")}
@@ -22,15 +28,21 @@ const Player = () => {
               onClick={() => setBtnToggle("selected")}
               className={`btn border-2 border-gray-300 ${btnToggle === "selected" && "bg-yellow-300"} border-l-0 rounded-r-2xl`}
             >
-              Selected(0)
+              Selected({selectedPlayers.length})
             </button>
           </div>
         </div>
       </div>
       {btnToggle === "available" ? (
-        <AvailablePlayers></AvailablePlayers>
+        <AvailablePlayers
+          selectedPlayers={selectedPlayers}
+          setSelectedPlayers={setSelectedPlayers}
+          players={playerData}
+          balance={balance}
+          setBalance={setBalance}
+        ></AvailablePlayers>
       ) : (
-        <SelectedPlayers></SelectedPlayers>
+        <SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>
       )}
     </>
   );
