@@ -14,7 +14,9 @@ const Player = ({ playerPromise, balance, setBalance }) => {
           {btnToggle === "available" ? (
             <h1 className="text-2xl font-bold">Available</h1>
           ) : (
-            <h1 className="text-2xl font-bold">Selected Player ({selectedPlayers.length}/{playerData.length})</h1>
+            <h1 className="text-2xl font-bold">
+              Selected Player ({selectedPlayers.length}/{playerData.length})
+            </h1>
           )}
           <div>
             <button
@@ -42,7 +44,12 @@ const Player = ({ playerPromise, balance, setBalance }) => {
           setBalance={setBalance}
         ></AvailablePlayers>
       ) : (
-        <SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>
+        <SelectedPlayers
+          selectedPlayers={selectedPlayers}
+          setSelectedPlayers={setSelectedPlayers}
+          balance={balance}
+          setBalance={setBalance}
+        ></SelectedPlayers>
       )}
     </>
   );

@@ -3,6 +3,7 @@ import "./App.css";
 import Banner from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
 import Player from "./components/Players/Player";
+import Loader from "./components/Loader/Loader";
 
 const playerData = async () => {
   const res = await fetch("/players.json");
@@ -18,7 +19,7 @@ function App() {
     <>
       <Navbar balance={balance}></Navbar>
       <Banner></Banner>
-      <Suspense fallback={<p>Wait...</p>}>
+      <Suspense fallback={<Loader></Loader>}>
         <Player
           balance={balance}
           setBalance={setBalance}
