@@ -1,5 +1,6 @@
 
 import { FaFlag, FaUser } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const AvailableCard = ({
   player,
@@ -14,11 +15,12 @@ const AvailableCard = ({
     const newBalance = parseInt(balance - selectedPlayer.playerPrice);
 
     if (newBalance < 0) {
-      alert("not enough balance");
+      toast.warning("not enough balance");
       return;
     }
     setBalance(newBalance);
     setSelectedPlayers([...selectedPlayers, selectedPlayer]);
+    toast.success("Player is successfully selected")
   };
 
   return (

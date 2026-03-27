@@ -1,6 +1,7 @@
 import React from "react";
 import EmptyText from "../../EmptyText/EmptyText";
 import SelectedCard from "../../ui/SelectedCard";
+import { toast } from "react-toastify";
 
 const SelectedPlayers = ({
   selectedPlayers,
@@ -12,6 +13,7 @@ const SelectedPlayers = ({
     setBalance(balance + selectPlayer.playerPrice);
     const newSelected = selectedPlayers.filter((p) => p.id !== selectPlayer.id);
     setSelectedPlayers(newSelected);
+    toast.error("Player is deleted")
   };
   return (
     <div className="w-11/12 mx-auto my-12 space-y-4">
