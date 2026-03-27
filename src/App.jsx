@@ -4,6 +4,7 @@ import Banner from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
 import Player from "./components/Players/Player";
 import Loader from "./components/Loader/Loader";
+import Footer from "./components/Footer/Footer";
 
 const playerData = async () => {
   const res = await fetch("/players.json");
@@ -26,6 +27,7 @@ function App() {
           playerPromise={promiseData}
         ></Player>
       </Suspense>
+      <Footer></Footer>
     </>
   );
 }
